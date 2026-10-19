@@ -1,0 +1,46 @@
+Note: Google Test filter = RecoveryBoundaryTester.*
+[==========] Running 6 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 6 tests from RecoveryBoundaryTester
+[ RUN      ] RecoveryBoundaryTester.DispatcherQueuedCommandStartsAfterSequencerCancellation
+
+***************************************
+A cancelled guest has no authority to retract the real dispatcher's queued command.
+***************************************
+[       OK ] RecoveryBoundaryTester.DispatcherQueuedCommandStartsAfterSequencerCancellation (9 ms)
+[ RUN      ] RecoveryBoundaryTester.ReceiverQueuedCommandStartsAfterSequencerCancellation
+
+***************************************
+Retraction at a sequencer cannot remove a command in a downstream handler queue.
+***************************************
+[       OK ] RecoveryBoundaryTester.ReceiverQueuedCommandStartsAfterSequencerCancellation (6 ms)
+[ RUN      ] RecoveryBoundaryTester.FinalGateRejectsPreviouslyQueuedCommand
+
+***************************************
+The downstream effect stub enforces revocation at initiation.
+***************************************
+[       OK ] RecoveryBoundaryTester.FinalGateRejectsPreviouslyQueuedCommand (6 ms)
+[ RUN      ] RecoveryBoundaryTester.InFlightEffectPreventsQuiescentAcknowledgement
+
+***************************************
+Revocation does not undo an effect that has already started.
+***************************************
+[       OK ] RecoveryBoundaryTester.InFlightEffectPreventsQuiescentAcknowledgement (5 ms)
+[ RUN      ] RecoveryBoundaryTester.RepeatedCancelledRunsAccumulateResidualCommands
+
+***************************************
+Independent sequence generations can leave multiple downstream commands pending.
+***************************************
+[       OK ] RecoveryBoundaryTester.RepeatedCancelledRunsAccumulateResidualCommands (7 ms)
+[ RUN      ] RecoveryBoundaryTester.OldTrackedReplyAliasesAfterFullCounterCycle
+
+***************************************
+No counter manipulation: retain one old dispatcher entry across 65536 subsequent runs.
+***************************************
+ALIAS_WITNESS total_runs=65537 old_dispatcher_seq=0 new_dispatcher_seq=65536 context=65537 current_effect_started=0 guest_ready=1
+[       OK ] RecoveryBoundaryTester.OldTrackedReplyAliasesAfterFullCounterCycle (13737 ms)
+[----------] 6 tests from RecoveryBoundaryTester (13772 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test suite ran. (13773 ms total)
+[  PASSED  ] 6 tests.

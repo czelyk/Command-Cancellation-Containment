@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="6" failures="0" disabled="0" errors="0" time="13.773" timestamp="2026-10-16T00:36:06.241" name="AllTests">
+  <testsuite name="RecoveryBoundaryTester" tests="6" failures="0" disabled="0" skipped="0" errors="0" time="13.772" timestamp="2026-10-16T00:36:06.241">
+    <testcase name="DispatcherQueuedCommandStartsAfterSequencerCancellation" file="<fprime-checkout>/Svc/WasmSequencer/test/ut/RecoveryContractTests.hpp" line="95" status="run" result="completed" time="0.009" timestamp="2026-10-16T00:36:06.241" classname="RecoveryBoundaryTester" />
+    <testcase name="ReceiverQueuedCommandStartsAfterSequencerCancellation" file="<fprime-checkout>/Svc/WasmSequencer/test/ut/RecoveryContractTests.hpp" line="107" status="run" result="completed" time="0.006" timestamp="2026-10-16T00:36:06.250" classname="RecoveryBoundaryTester" />
+    <testcase name="FinalGateRejectsPreviouslyQueuedCommand" file="<fprime-checkout>/Svc/WasmSequencer/test/ut/RecoveryContractTests.hpp" line="118" status="run" result="completed" time="0.006" timestamp="2026-10-16T00:36:06.256" classname="RecoveryBoundaryTester" />
+    <testcase name="InFlightEffectPreventsQuiescentAcknowledgement" file="<fprime-checkout>/Svc/WasmSequencer/test/ut/RecoveryContractTests.hpp" line="131" status="run" result="completed" time="0.005" timestamp="2026-10-16T00:36:06.263" classname="RecoveryBoundaryTester" />
+    <testcase name="RepeatedCancelledRunsAccumulateResidualCommands" file="<fprime-checkout>/Svc/WasmSequencer/test/ut/RecoveryContractTests.hpp" line="144" status="run" result="completed" time="0.007" timestamp="2026-10-16T00:36:06.269" classname="RecoveryBoundaryTester" />
+    <testcase name="OldTrackedReplyAliasesAfterFullCounterCycle" file="<fprime-checkout>/Svc/WasmSequencer/test/ut/RecoveryContractTests.hpp" line="159" status="run" result="completed" time="13.737" timestamp="2026-10-16T00:36:06.276" classname="RecoveryBoundaryTester" />
+  </testsuite>
+</testsuites>

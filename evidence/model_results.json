@@ -1,0 +1,145 @@
+[
+  {
+    "policy": "local_stop",
+    "schedules": 40,
+    "post_ack_starts": 14,
+    "post_ack_completions": 26,
+    "false_quiescence": 12,
+    "witnesses": {
+      "post_ack_completions": [
+        "dispatch",
+        "check",
+        "start",
+        "cancel",
+        "revoke",
+        "ack",
+        "finish"
+      ],
+      "false_quiescence": [
+        "dispatch",
+        "check",
+        "start",
+        "cancel",
+        "revoke",
+        "ack",
+        "finish"
+      ],
+      "post_ack_starts": [
+        "dispatch",
+        "check",
+        "cancel",
+        "revoke",
+        "ack",
+        "start",
+        "finish"
+      ]
+    }
+  },
+  {
+    "policy": "ingress_fence",
+    "schedules": 40,
+    "post_ack_starts": 11,
+    "post_ack_completions": 22,
+    "false_quiescence": 11,
+    "witnesses": {
+      "post_ack_completions": [
+        "dispatch",
+        "check",
+        "start",
+        "cancel",
+        "revoke",
+        "ack",
+        "finish"
+      ],
+      "false_quiescence": [
+        "dispatch",
+        "check",
+        "start",
+        "cancel",
+        "revoke",
+        "ack",
+        "finish"
+      ],
+      "post_ack_starts": [
+        "dispatch",
+        "check",
+        "cancel",
+        "revoke",
+        "ack",
+        "start",
+        "finish"
+      ]
+    }
+  },
+  {
+    "policy": "commit_immediate",
+    "schedules": 40,
+    "post_ack_starts": 6,
+    "post_ack_completions": 15,
+    "false_quiescence": 9,
+    "witnesses": {
+      "post_ack_completions": [
+        "dispatch",
+        "check",
+        "start",
+        "cancel",
+        "revoke",
+        "ack",
+        "finish"
+      ],
+      "false_quiescence": [
+        "dispatch",
+        "check",
+        "start",
+        "cancel",
+        "revoke",
+        "ack",
+        "finish"
+      ],
+      "post_ack_starts": [
+        "dispatch",
+        "check",
+        "cancel",
+        "ack",
+        "start",
+        "finish",
+        "revoke"
+      ]
+    }
+  },
+  {
+    "policy": "split_check_barrier",
+    "schedules": 15,
+    "post_ack_starts": 2,
+    "post_ack_completions": 2,
+    "false_quiescence": 0,
+    "witnesses": {
+      "post_ack_starts": [
+        "dispatch",
+        "check",
+        "cancel",
+        "revoke",
+        "ack",
+        "start",
+        "finish"
+      ],
+      "post_ack_completions": [
+        "dispatch",
+        "check",
+        "cancel",
+        "revoke",
+        "ack",
+        "start",
+        "finish"
+      ]
+    }
+  },
+  {
+    "policy": "atomic_commit_barrier",
+    "schedules": 17,
+    "post_ack_starts": 0,
+    "post_ack_completions": 0,
+    "false_quiescence": 0,
+    "witnesses": {}
+  }
+]

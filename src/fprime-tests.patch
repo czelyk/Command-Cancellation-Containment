@@ -1,0 +1,60 @@
+diff --git a/Svc/WasmSequencer/CMakeLists.txt b/Svc/WasmSequencer/CMakeLists.txt
+index e401728..e1c1e9e 100644
+--- a/Svc/WasmSequencer/CMakeLists.txt
++++ b/Svc/WasmSequencer/CMakeLists.txt
+@@ -163,6 +163,7 @@ register_fprime_ut(
+     DEPENDS
+         STest # For rules-based testing
+         Fw_Test # For Test::UnitTestAssert (non-aborting FW_ASSERT hook)
++        Svc_CmdDispatcher
+     UT_AUTO_HELPERS
+ )
+ 
+diff --git a/Svc/WasmSequencer/test/ut/WasmSequencerTestMain.cpp b/Svc/WasmSequencer/test/ut/WasmSequencerTestMain.cpp
+index ecef245..8065fab 100644
+--- a/Svc/WasmSequencer/test/ut/WasmSequencerTestMain.cpp
++++ b/Svc/WasmSequencer/test/ut/WasmSequencerTestMain.cpp
+@@ -4968,6 +4968,8 @@ TEST_F(WasmSequencerTester, GlobalGetSetWhileSequencePaused) {
+ 
+ }  // namespace Svc
+ 
++#include "RecoveryContractTests.hpp"
++
+ int main(int argc, char** argv) {
+     ::testing::InitGoogleTest(&argc, argv);
+     return RUN_ALL_TESTS();
+diff --git a/Svc/WasmSequencer/test/ut/WasmSequencerTester.cpp b/Svc/WasmSequencer/test/ut/WasmSequencerTester.cpp
+index 7afa81f..b9f0999 100644
+--- a/Svc/WasmSequencer/test/ut/WasmSequencerTester.cpp
++++ b/Svc/WasmSequencer/test/ut/WasmSequencerTester.cpp
+@@ -166,6 +166,15 @@ void WasmSequencerTester ::disconnectCmdOut(FwIndexType portNum) {
+     port.init();
+ }
+ 
++void WasmSequencerTester ::connectRecoveryDispatcher(Fw::InputComPort& input) {
++    this->disconnectCmdOut(0);
++    this->component.set_cmdOut_OutputPort(0, &input);
++}
++
++Fw::InputCmdResponsePort* WasmSequencerTester ::recoveryResponsePort() {
++    return this->component.get_cmdResponseIn_InputPort(0);
++}
++
+ void WasmSequencerTester ::disconnectSeqStartOut(FwIndexType portNum) {
+     Svc::OutputCmdSeqInPort& port = this->component.m_seqStartOut_OutputPort[portNum];
+     port.~OutputCmdSeqInPort();
+diff --git a/Svc/WasmSequencer/test/ut/WasmSequencerTester.hpp b/Svc/WasmSequencer/test/ut/WasmSequencerTester.hpp
+index 2d61f96..7955c30 100644
+--- a/Svc/WasmSequencer/test/ut/WasmSequencerTester.hpp
++++ b/Svc/WasmSequencer/test/ut/WasmSequencerTester.hpp
+@@ -151,6 +151,10 @@ class WasmSequencerTester : public WasmSequencerGTestBase, public ::testing::Tes
+     void disconnectGetParam(FwIndexType portNum);
+     void disconnectCmdOut(FwIndexType portNum);
+ 
++    //! Wire the real command dispatcher for local recovery-boundary experiments.
++    void connectRecoveryDispatcher(Fw::InputComPort& input);
++    Fw::InputCmdResponsePort* recoveryResponsePort();
++
+     //! Reset the run-reporting output ports to an unconnected state (same placement-new
+     //! idiom). seqStartOut / seqDoneOut are plain (not-required) ports, so a deployment
+     //! that wires no dispatcher leaves them unconnected; these exercise the isConnected

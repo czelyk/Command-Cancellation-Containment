@@ -1,0 +1,41 @@
+Note: Google Test filter = RecoveryBoundaryTester.*
+[==========] Running 5 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 5 tests from RecoveryBoundaryTester
+[ RUN      ] RecoveryBoundaryTester.DispatcherQueuedCommandStartsAfterSequencerCancellation
+
+***************************************
+A cancelled guest has no authority to retract the real dispatcher's queued command.
+***************************************
+[       OK ] RecoveryBoundaryTester.DispatcherQueuedCommandStartsAfterSequencerCancellation (7 ms)
+[ RUN      ] RecoveryBoundaryTester.ReceiverQueuedCommandStartsAfterSequencerCancellation
+
+***************************************
+Retraction at a sequencer cannot remove a command in a downstream handler queue.
+***************************************
+[       OK ] RecoveryBoundaryTester.ReceiverQueuedCommandStartsAfterSequencerCancellation (6 ms)
+[ RUN      ] RecoveryBoundaryTester.FinalGateRejectsPreviouslyQueuedCommand
+
+***************************************
+The downstream effect stub enforces revocation at initiation.
+***************************************
+[       OK ] RecoveryBoundaryTester.FinalGateRejectsPreviouslyQueuedCommand (5 ms)
+[ RUN      ] RecoveryBoundaryTester.InFlightEffectPreventsQuiescentAcknowledgement
+
+***************************************
+Revocation does not undo an effect that has already started.
+***************************************
+[       OK ] RecoveryBoundaryTester.InFlightEffectPreventsQuiescentAcknowledgement (6 ms)
+[ RUN      ] RecoveryBoundaryTester.RepeatedCancelledRunsAccumulateResidualCommands
+
+***************************************
+Independent sequence generations can leave multiple downstream commands pending.
+***************************************
+[       OK ] RecoveryBoundaryTester.RepeatedCancelledRunsAccumulateResidualCommands (7 ms)
+[----------] 5 tests from RecoveryBoundaryTester (33 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test suite ran. (33 ms total)
+[  PASSED  ] 5 tests.
+libgcov profiling error:<fprime-checkout>/build-fprime-automatic-native-ut/F-Prime/Svc/WasmSequencer/CMakeFiles/Svc_WasmSequencer_ut_exe.dir/test/ut/WasmSequencerTester.cpp.gcda:overwriting an existing profile data with a different checksum
+libgcov profiling error:<fprime-checkout>/build-fprime-automatic-native-ut/F-Prime/Svc/WasmSequencer/CMakeFiles/Svc_WasmSequencer_ut_exe.dir/test/ut/WasmSequencerTestMain.cpp.gcda:overwriting an existing profile data with a different checksum

@@ -1,0 +1,1453 @@
+[==========] Running 218 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 210 tests from WasmSequencerTester
+[ RUN      ] WasmSequencerTester.InitialStateIsIdle
+[       OK ] WasmSequencerTester.InitialStateIsIdle (2 ms)
+[ RUN      ] WasmSequencerTester.LoadEmptyModuleReady
+
+***************************************
+(RQ)       WASM-SEQ-001
+***************************************
+[       OK ] WasmSequencerTester.LoadEmptyModuleReady (6 ms)
+[ RUN      ] WasmSequencerTester.LoadResolvesAgainstSeqBaseDir
+
+***************************************
+(RQ)       WASM-SEQ-004
+***************************************
+[       OK ] WasmSequencerTester.LoadResolvesAgainstSeqBaseDir (9 ms)
+[ RUN      ] WasmSequencerTester.LoadAgainstMissingBaseDirFailsToOpen
+
+***************************************
+(RQ)       WASM-SEQ-004
+***************************************
+[       OK ] WasmSequencerTester.LoadAgainstMissingBaseDirFailsToOpen (6 ms)
+[ RUN      ] WasmSequencerTester.LoadInsertsSeparatorForBaseDirWithoutTrailingSlash
+
+***************************************
+(RQ)       WASM-SEQ-004
+***************************************
+[       OK ] WasmSequencerTester.LoadInsertsSeparatorForBaseDirWithoutTrailingSlash (6 ms)
+[ RUN      ] WasmSequencerTester.LoadRejectsPathTraversalOutsideBaseDir
+
+***************************************
+(RQ)       WASM-SEQ-004
+***************************************
+[       OK ] WasmSequencerTester.LoadRejectsPathTraversalOutsideBaseDir (2 ms)
+[ RUN      ] WasmSequencerTester.SeqRunPathTooLongEmitsEvent
+
+***************************************
+(RQ)       WASM-SEQ-004
+***************************************
+[       OK ] WasmSequencerTester.SeqRunPathTooLongEmitsEvent (1 ms)
+[ RUN      ] WasmSequencerTester.LoadNamedModuleReady
+
+***************************************
+(RQ)       WASM-SEQ-002
+***************************************
+[       OK ] WasmSequencerTester.LoadNamedModuleReady (7 ms)
+[ RUN      ] WasmSequencerTester.LoadStartModuleRespondsOk
+
+***************************************
+(RQ)       WASM-SEQ-001
+***************************************
+[       OK ] WasmSequencerTester.LoadStartModuleRespondsOk (6 ms)
+[ RUN      ] WasmSequencerTester.LoadStartModuleTrapRespondsError
+
+***************************************
+(RQ)       WASM-SEQ-018
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.LoadStartModuleTrapRespondsError (7 ms)
+[ RUN      ] WasmSequencerTester.LoadStartModuleTwiceDoesNotWedge
+
+***************************************
+(RQ)       WASM-SEQ-001
+***************************************
+[       OK ] WasmSequencerTester.LoadStartModuleTwiceDoesNotWedge (5 ms)
+[ RUN      ] WasmSequencerTester.LoadFileNotFound
+
+***************************************
+(RQ)       WASM-SEQ-001
+***************************************
+[       OK ] WasmSequencerTester.LoadFileNotFound (1 ms)
+[ RUN      ] WasmSequencerTester.LoadMalformedMagic
+
+***************************************
+(RQ)       WASM-SEQ-001
+***************************************
+[       OK ] WasmSequencerTester.LoadMalformedMagic (7 ms)
+[ RUN      ] WasmSequencerTester.LoadTruncated
+
+***************************************
+(RQ)       WASM-SEQ-001
+***************************************
+[       OK ] WasmSequencerTester.LoadTruncated (6 ms)
+[ RUN      ] WasmSequencerTester.LoadBigMemFailsAllocator
+
+***************************************
+(RQ)       WASM-SEQ-003
+***************************************
+[       OK ] WasmSequencerTester.LoadBigMemFailsAllocator (6 ms)
+[ RUN      ] WasmSequencerTester.LoadBadImportNameFails
+
+***************************************
+(RQ)       WASM-SEQ-001
+***************************************
+[       OK ] WasmSequencerTester.LoadBadImportNameFails (6 ms)
+[ RUN      ] WasmSequencerTester.LoadBadImportModuleFails
+
+***************************************
+(RQ)       WASM-SEQ-001
+***************************************
+[       OK ] WasmSequencerTester.LoadBadImportModuleFails (6 ms)
+[ RUN      ] WasmSequencerTester.LoadBadImportSigFails
+
+***************************************
+(RQ)       WASM-SEQ-001
+***************************************
+[       OK ] WasmSequencerTester.LoadBadImportSigFails (6 ms)
+[ RUN      ] WasmSequencerTester.RunEmptyNoBlock
+
+***************************************
+(RQ)       WASM-SEQ-007
+***************************************
+[       OK ] WasmSequencerTester.RunEmptyNoBlock (6 ms)
+[ RUN      ] WasmSequencerTester.RunEmptyBlock
+
+***************************************
+(RQ)       WASM-SEQ-007
+***************************************
+[       OK ] WasmSequencerTester.RunEmptyBlock (6 ms)
+[ RUN      ] WasmSequencerTester.RunStartModule
+
+***************************************
+(RQ)       WASM-SEQ-018
+***************************************
+[       OK ] WasmSequencerTester.RunStartModule (6 ms)
+[ RUN      ] WasmSequencerTester.RunNoMainFailsInvoke
+
+***************************************
+(RQ)       WASM-SEQ-001
+***************************************
+[       OK ] WasmSequencerTester.RunNoMainFailsInvoke (7 ms)
+[ RUN      ] WasmSequencerTester.RunMainInvokeFails
+
+***************************************
+(RQ)       WASM-SEQ-018
+***************************************
+[       OK ] WasmSequencerTester.RunMainInvokeFails (6 ms)
+[ RUN      ] WasmSequencerTester.RunMainReturningNonZeroFails
+
+***************************************
+(RQ)       WASM-SEQ-018
+***************************************
+[       OK ] WasmSequencerTester.RunMainReturningNonZeroFails (6 ms)
+[ RUN      ] WasmSequencerTester.RunUnreachableTraps
+
+***************************************
+(RQ)       WASM-SEQ-018
+***************************************
+[       OK ] WasmSequencerTester.RunUnreachableTraps (6 ms)
+[ RUN      ] WasmSequencerTester.RunDivZeroTraps
+
+***************************************
+(RQ)       WASM-SEQ-018
+***************************************
+[       OK ] WasmSequencerTester.RunDivZeroTraps (6 ms)
+[ RUN      ] WasmSequencerTester.RunExitNonZeroFails
+
+***************************************
+(RQ)       WASM-SEQ-018
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.RunExitNonZeroFails (6 ms)
+[ RUN      ] WasmSequencerTester.RunPanicFails
+
+***************************************
+(RQ)       WASM-SEQ-018
+***************************************
+[       OK ] WasmSequencerTester.RunPanicFails (6 ms)
+[ RUN      ] WasmSequencerTester.RunExitZeroSucceeds
+
+***************************************
+(RQ)       WASM-SEQ-018
+***************************************
+[       OK ] WasmSequencerTester.RunExitZeroSucceeds (5 ms)
+[ RUN      ] WasmSequencerTester.RunStartTrapsToIdle
+
+***************************************
+(RQ)       WASM-SEQ-018
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.RunStartTrapsToIdle (6 ms)
+[ RUN      ] WasmSequencerTester.RunStartOverflowTrapsToIdle
+
+***************************************
+(RQ)       WASM-SEQ-018
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.RunStartOverflowTrapsToIdle (6 ms)
+[ RUN      ] WasmSequencerTester.InvokeAfterLoad
+
+***************************************
+(RQ)       WASM-SEQ-006
+***************************************
+[       OK ] WasmSequencerTester.InvokeAfterLoad (7 ms)
+[ RUN      ] WasmSequencerTester.InvokeTrapAfterExitZeroIsNotMisreported
+
+***************************************
+(RQ)       WASM-SEQ-006
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-018
+***************************************
+[       OK ] WasmSequencerTester.InvokeTrapAfterExitZeroIsNotMisreported (5 ms)
+[ RUN      ] WasmSequencerTester.InvokeNoBlockRespondsImmediately
+
+***************************************
+(RQ)       WASM-SEQ-006
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-007
+***************************************
+[       OK ] WasmSequencerTester.InvokeNoBlockRespondsImmediately (7 ms)
+[ RUN      ] WasmSequencerTester.InvokeUnknownModule
+
+***************************************
+(RQ)       WASM-SEQ-006
+***************************************
+[       OK ] WasmSequencerTester.InvokeUnknownModule (5 ms)
+[ RUN      ] WasmSequencerTester.InvokeFromIdleInvalid
+
+***************************************
+(RQ)       WASM-SEQ-006
+***************************************
+[       OK ] WasmSequencerTester.InvokeFromIdleInvalid (1 ms)
+[ RUN      ] WasmSequencerTester.WaitFromIdleRespondsImmediately
+
+***************************************
+(RQ)       WASM-SEQ-007
+***************************************
+[       OK ] WasmSequencerTester.WaitFromIdleRespondsImmediately (1 ms)
+[ RUN      ] WasmSequencerTester.WaitFromReadyRespondsImmediately
+
+***************************************
+(RQ)       WASM-SEQ-007
+***************************************
+[       OK ] WasmSequencerTester.WaitFromReadyRespondsImmediately (7 ms)
+[ RUN      ] WasmSequencerTester.WaitDuringLoadRespondsOnLoadComplete
+
+***************************************
+(RQ)       WASM-SEQ-007
+***************************************
+[       OK ] WasmSequencerTester.WaitDuringLoadRespondsOnLoadComplete (6 ms)
+[ RUN      ] WasmSequencerTester.ContinueFromIdleInvalid
+
+***************************************
+(RQ)       WASM-SEQ-009
+***************************************
+[       OK ] WasmSequencerTester.ContinueFromIdleInvalid (1 ms)
+[ RUN      ] WasmSequencerTester.PauseFromIdleInvalid
+
+***************************************
+(RQ)       WASM-SEQ-009
+***************************************
+[       OK ] WasmSequencerTester.PauseFromIdleInvalid (1 ms)
+[ RUN      ] WasmSequencerTester.MapTrapReasonAllCases
+
+***************************************
+(RQ)       WASM-SEQ-020
+***************************************
+[       OK ] WasmSequencerTester.MapTrapReasonAllCases (1 ms)
+[ RUN      ] WasmSequencerTester.EventActivityHi
+
+***************************************
+(RQ)       WASM-SEQ-014
+***************************************
+[       OK ] WasmSequencerTester.EventActivityHi (6 ms)
+[ RUN      ] WasmSequencerTester.EventAllSeverities
+
+***************************************
+(RQ)       WASM-SEQ-014
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.EventAllSeverities (6 ms)
+[ RUN      ] WasmSequencerTester.EventMessageTruncatedToMax
+
+***************************************
+(RQ)       WASM-SEQ-014
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.EventMessageTruncatedToMax (6 ms)
+[ RUN      ] WasmSequencerTester.EventBadSeverityReported
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.EventBadSeverityReported (7 ms)
+[ RUN      ] WasmSequencerTester.TelemetryRead
+
+***************************************
+(RQ)       WASM-SEQ-012
+***************************************
+[       OK ] WasmSequencerTester.TelemetryRead (6 ms)
+[ RUN      ] WasmSequencerTester.TelemetryReadPortNotConnectedTraps
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.TelemetryReadPortNotConnectedTraps (5 ms)
+[ RUN      ] WasmSequencerTester.ParameterReadPortNotConnectedTraps
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.ParameterReadPortNotConnectedTraps (6 ms)
+[ RUN      ] WasmSequencerTester.TelemetryReadIdNegativeTraps
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.TelemetryReadIdNegativeTraps (6 ms)
+[ RUN      ] WasmSequencerTester.TelemetryReadIdTooLargeTraps
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.TelemetryReadIdTooLargeTraps (6 ms)
+[ RUN      ] WasmSequencerTester.ParameterReadIdNegativeTraps
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.ParameterReadIdNegativeTraps (6 ms)
+[ RUN      ] WasmSequencerTester.ParameterReadIdTooLargeTraps
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.ParameterReadIdTooLargeTraps (6 ms)
+[ RUN      ] WasmSequencerTester.CommandPortNotConnectedTraps
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.CommandPortNotConnectedTraps (6 ms)
+[ RUN      ] WasmSequencerTester.TelemetryReadValueMismatchTraps
+
+***************************************
+(RQ)       WASM-SEQ-012
+***************************************
+[       OK ] WasmSequencerTester.TelemetryReadValueMismatchTraps (6 ms)
+[ RUN      ] WasmSequencerTester.TelemetryBadTimeSizeTraps
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.TelemetryBadTimeSizeTraps (6 ms)
+[ RUN      ] WasmSequencerTester.TelemetryBadTimeSizeTooLargeTraps
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.TelemetryBadTimeSizeTooLargeTraps (6 ms)
+[ RUN      ] WasmSequencerTester.TelemetryOversizedRequestWritesOnlyValueBytes
+
+***************************************
+(RQ)       WASM-SEQ-012
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.TelemetryOversizedRequestWritesOnlyValueBytes (6 ms)
+[ RUN      ] WasmSequencerTester.TelemetryUndersizedRequestFails
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.TelemetryUndersizedRequestFails (6 ms)
+[ RUN      ] WasmSequencerTester.ParameterRead
+
+***************************************
+(RQ)       WASM-SEQ-012
+***************************************
+[       OK ] WasmSequencerTester.ParameterRead (6 ms)
+[ RUN      ] WasmSequencerTester.ParameterReadValueMismatchTraps
+
+***************************************
+(RQ)       WASM-SEQ-012
+***************************************
+[       OK ] WasmSequencerTester.ParameterReadValueMismatchTraps (6 ms)
+[ RUN      ] WasmSequencerTester.ParameterOversizedRequestWritesOnlyValueBytes
+
+***************************************
+(RQ)       WASM-SEQ-012
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.ParameterOversizedRequestWritesOnlyValueBytes (6 ms)
+[ RUN      ] WasmSequencerTester.ParameterUndersizedRequestFails
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.ParameterUndersizedRequestFails (6 ms)
+[ RUN      ] WasmSequencerTester.ArgsAlwaysReportsZeroBytes
+
+***************************************
+(RQ)       WASM-SEQ-005
+***************************************
+[       OK ] WasmSequencerTester.ArgsAlwaysReportsZeroBytes (6 ms)
+[ RUN      ] WasmSequencerTester.TimeRead
+
+***************************************
+(RQ)       WASM-SEQ-012
+***************************************
+[       OK ] WasmSequencerTester.TimeRead (6 ms)
+[ RUN      ] WasmSequencerTester.TimeBadPointerFails
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.TimeBadPointerFails (6 ms)
+[ RUN      ] WasmSequencerTester.TimeBadSizeTraps
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.TimeBadSizeTraps (6 ms)
+[ RUN      ] WasmSequencerTester.TimeBadSizeTooLargeTraps
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.TimeBadSizeTooLargeTraps (6 ms)
+[ RUN      ] WasmSequencerTester.TelemetryInitialDefaults
+
+***************************************
+(RQ)       WASM-SEQ-020
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.TelemetryInitialDefaults (1 ms)
+[ RUN      ] WasmSequencerTester.TelemetryInterpreterStateReflectsEngine
+
+***************************************
+(RQ)       WASM-SEQ-020
+***************************************
+[       OK ] WasmSequencerTester.TelemetryInterpreterStateReflectsEngine (8 ms)
+[ RUN      ] WasmSequencerTester.TelemetrySuccessCountAndName
+
+***************************************
+(RQ)       WASM-SEQ-020
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.TelemetrySuccessCountAndName (6 ms)
+[ RUN      ] WasmSequencerTester.TelemetrySuccessCountAccumulates
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.TelemetrySuccessCountAccumulates (6 ms)
+[ RUN      ] WasmSequencerTester.TelemetryLoadNameRecordsModuleName
+
+***************************************
+(RQ)       WASM-SEQ-020
+***************************************
+[       OK ] WasmSequencerTester.TelemetryLoadNameRecordsModuleName (6 ms)
+[ RUN      ] WasmSequencerTester.TelemetryFailedCount
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.TelemetryFailedCount (6 ms)
+[ RUN      ] WasmSequencerTester.TelemetryTrapRecordsReasonAndFails
+
+***************************************
+(RQ)       WASM-SEQ-020
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.TelemetryTrapRecordsReasonAndFails (6 ms)
+[ RUN      ] WasmSequencerTester.LastTrapReasonClearedAcrossSequences
+
+***************************************
+(RQ)       WASM-SEQ-020
+***************************************
+[       OK ] WasmSequencerTester.LastTrapReasonClearedAcrossSequences (12 ms)
+[ RUN      ] WasmSequencerTester.LastHostFunctionClearedAcrossSequences
+
+***************************************
+(RQ)       WASM-SEQ-018
+***************************************
+[       OK ] WasmSequencerTester.LastHostFunctionClearedAcrossSequences (13 ms)
+[ RUN      ] WasmSequencerTester.TelemetryCancelledCount
+
+***************************************
+(RQ)       WASM-SEQ-010
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.TelemetryCancelledCount (10 ms)
+[ RUN      ] WasmSequencerTester.TelemetryCommandsDispatchedAndFailed
+
+***************************************
+(RQ)       WASM-SEQ-013
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.TelemetryCommandsDispatchedAndFailed (11 ms)
+[ RUN      ] WasmSequencerTester.TelemetryCommandOkDoesNotCountFailed
+
+***************************************
+(RQ)       WASM-SEQ-013
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.TelemetryCommandOkDoesNotCountFailed (10 ms)
+[ RUN      ] WasmSequencerTester.CommandByteFidelityAndResume
+
+***************************************
+(RQ)       WASM-SEQ-013
+***************************************
+[       OK ] WasmSequencerTester.CommandByteFidelityAndResume (10 ms)
+[ RUN      ] WasmSequencerTester.CommandTooBigTraps
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.CommandTooBigTraps (10 ms)
+[ RUN      ] WasmSequencerTester.UnexpectedCmdResponseFromIdle
+
+***************************************
+(RQ)       WASM-SEQ-013
+***************************************
+[       OK ] WasmSequencerTester.UnexpectedCmdResponseFromIdle (2 ms)
+[ RUN      ] WasmSequencerTester.CommandBadPointerFails
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.CommandBadPointerFails (7 ms)
+[ RUN      ] WasmSequencerTester.EventBadPointerFails
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.EventBadPointerFails (6 ms)
+[ RUN      ] WasmSequencerTester.ParameterBadPointerFails
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.ParameterBadPointerFails (6 ms)
+[ RUN      ] WasmSequencerTester.TelemetryBadTimePointerFails
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.TelemetryBadTimePointerFails (6 ms)
+[ RUN      ] WasmSequencerTester.TelemetryBadValuePointerFails
+
+***************************************
+(RQ)       WASM-SEQ-012
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.TelemetryBadValuePointerFails (6 ms)
+[ RUN      ] WasmSequencerTester.RelativeSleepWakes
+
+***************************************
+(RQ)       WASM-SEQ-015
+***************************************
+[       OK ] WasmSequencerTester.RelativeSleepWakes (6 ms)
+[ RUN      ] WasmSequencerTester.RelativeSleepDeadlineOverflowDoesNotWakeEarly
+
+***************************************
+(RQ)       WASM-SEQ-015
+***************************************
+[       OK ] WasmSequencerTester.RelativeSleepDeadlineOverflowDoesNotWakeEarly (6 ms)
+[ RUN      ] WasmSequencerTester.AbsoluteSleepWakes
+
+***************************************
+(RQ)       WASM-SEQ-015
+***************************************
+[       OK ] WasmSequencerTester.AbsoluteSleepWakes (6 ms)
+[ RUN      ] WasmSequencerTester.SleepTimeBaseMismatchFails
+
+***************************************
+(RQ)       WASM-SEQ-015
+***************************************
+[       OK ] WasmSequencerTester.SleepTimeBaseMismatchFails (6 ms)
+[ RUN      ] WasmSequencerTester.SleepDurationOverflowFails
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.SleepDurationOverflowFails (6 ms)
+[ RUN      ] WasmSequencerTester.AbsoluteSleepDurationOverflowFails
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.AbsoluteSleepDurationOverflowFails (6 ms)
+[ RUN      ] WasmSequencerTester.PauseThenContinueCompletes
+
+***************************************
+(RQ)       WASM-SEQ-009
+***************************************
+[       OK ] WasmSequencerTester.PauseThenContinueCompletes (6 ms)
+[ RUN      ] WasmSequencerTester.CancelWhileSpinning
+
+***************************************
+(RQ)       WASM-SEQ-008
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-010
+***************************************
+[       OK ] WasmSequencerTester.CancelWhileSpinning (6 ms)
+[ RUN      ] WasmSequencerTester.CancelWhilePaused
+
+***************************************
+(RQ)       WASM-SEQ-010
+***************************************
+[       OK ] WasmSequencerTester.CancelWhilePaused (10 ms)
+[ RUN      ] WasmSequencerTester.CancelWhileAwaitingResponse
+
+***************************************
+(RQ)       WASM-SEQ-010
+***************************************
+[       OK ] WasmSequencerTester.CancelWhileAwaitingResponse (6 ms)
+[ RUN      ] WasmSequencerTester.CancelFromReadyReturnsIdle
+
+***************************************
+(RQ)       WASM-SEQ-010
+***************************************
+[       OK ] WasmSequencerTester.CancelFromReadyReturnsIdle (6 ms)
+[ RUN      ] WasmSequencerTester.CancelFromIdleStaysIdle
+
+***************************************
+(RQ)       WASM-SEQ-003
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-010
+***************************************
+[       OK ] WasmSequencerTester.CancelFromIdleStaysIdle (1 ms)
+[ RUN      ] WasmSequencerTester.CancelCommandFromIdleRespondsOk
+
+***************************************
+(RQ)       WASM-SEQ-010
+***************************************
+[       OK ] WasmSequencerTester.CancelCommandFromIdleRespondsOk (1 ms)
+[ RUN      ] WasmSequencerTester.CancelCommandWhileRunningRespondsOk
+
+***************************************
+(RQ)       WASM-SEQ-010
+***************************************
+[       OK ] WasmSequencerTester.CancelCommandWhileRunningRespondsOk (6 ms)
+[ RUN      ] WasmSequencerTester.RunCancelledDuringLoadDiverts
+
+***************************************
+(RQ)       WASM-SEQ-010
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.RunCancelledDuringLoadDiverts (6 ms)
+[ RUN      ] WasmSequencerTester.LoadCancelledDuringLoadDiverts
+
+***************************************
+(RQ)       WASM-SEQ-010
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.LoadCancelledDuringLoadDiverts (6 ms)
+[ RUN      ] WasmSequencerTester.InvokeCancelledDuringInvokingDiverts
+
+***************************************
+(RQ)       WASM-SEQ-010
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.InvokeCancelledDuringInvokingDiverts (6 ms)
+[ RUN      ] WasmSequencerTester.RunWithStartCancelledInStartMainGapDiverts
+
+***************************************
+(RQ)       WASM-SEQ-010
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.RunWithStartCancelledInStartMainGapDiverts (6 ms)
+[ RUN      ] WasmSequencerTester.CancelAfterEngineRunningCountsOnce
+
+***************************************
+(RQ)       WASM-SEQ-010
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.CancelAfterEngineRunningCountsOnce (6 ms)
+[ RUN      ] WasmSequencerTester.CancelLatchDoesNotLeak
+
+***************************************
+(RQ)       WASM-SEQ-010
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.CancelLatchDoesNotLeak (6 ms)
+[ RUN      ] WasmSequencerTester.SeqCancelInDuringLoadDiverts
+
+***************************************
+(RQ)       WASM-SEQ-010
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.SeqCancelInDuringLoadDiverts (6 ms)
+[ RUN      ] WasmSequencerTester.CancelDuringFailedInvokeDoesNotLeakToNextInvoke
+
+***************************************
+(RQ)       WASM-SEQ-010
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.CancelDuringFailedInvokeDoesNotLeakToNextInvoke (6 ms)
+[ RUN      ] WasmSequencerTester.UnexpectedCmdResponseWhilePausedFails
+
+***************************************
+(RQ)       WASM-SEQ-013
+***************************************
+[       OK ] WasmSequencerTester.UnexpectedCmdResponseWhilePausedFails (6 ms)
+[ RUN      ] WasmSequencerTester.SeqStartDoneEmittedOnRunCommandSuccess
+
+***************************************
+(RQ)       WASM-SEQ-018
+***************************************
+[       OK ] WasmSequencerTester.SeqStartDoneEmittedOnRunCommandSuccess (6 ms)
+[ RUN      ] WasmSequencerTester.SeqDoneEmittedWithErrorOnRunFailure
+
+***************************************
+(RQ)       WASM-SEQ-018
+***************************************
+[       OK ] WasmSequencerTester.SeqDoneEmittedWithErrorOnRunFailure (6 ms)
+[ RUN      ] WasmSequencerTester.SeqDoneEmittedWithErrorOnRunCancel
+
+***************************************
+(RQ)       WASM-SEQ-010
+***************************************
+[       OK ] WasmSequencerTester.SeqDoneEmittedWithErrorOnRunCancel (6 ms)
+[ RUN      ] WasmSequencerTester.InvokeDoesNotEmitSeqStartOrDone
+
+***************************************
+(RQ)       WASM-SEQ-006
+***************************************
+[       OK ] WasmSequencerTester.InvokeDoesNotEmitSeqStartOrDone (6 ms)
+[ RUN      ] WasmSequencerTester.SeqRunInPortRunsSequence
+
+***************************************
+(RQ)       WASM-SEQ-005
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-018
+***************************************
+[       OK ] WasmSequencerTester.SeqRunInPortRunsSequence (6 ms)
+[ RUN      ] WasmSequencerTester.SeqRunInFromReadyRuns
+
+***************************************
+(RQ)       WASM-SEQ-018
+***************************************
+[       OK ] WasmSequencerTester.SeqRunInFromReadyRuns (7 ms)
+[ RUN      ] WasmSequencerTester.SeqRunInWhileRunningRejected
+
+***************************************
+(RQ)       WASM-SEQ-024
+***************************************
+[       OK ] WasmSequencerTester.SeqRunInWhileRunningRejected (6 ms)
+[ RUN      ] WasmSequencerTester.SeqRunInLoadFailureEmitsSeqDone
+
+***************************************
+(RQ)       WASM-SEQ-025
+***************************************
+[       OK ] WasmSequencerTester.SeqRunInLoadFailureEmitsSeqDone (1 ms)
+[ RUN      ] WasmSequencerTester.SeqRunInNoMainEmitsSeqDone
+
+***************************************
+(RQ)       WASM-SEQ-025
+***************************************
+[       OK ] WasmSequencerTester.SeqRunInNoMainEmitsSeqDone (7 ms)
+[ RUN      ] WasmSequencerTester.SeqRunInStartInvokeFailureEmitsSeqDone
+
+***************************************
+(RQ)       WASM-SEQ-025
+***************************************
+[       OK ] WasmSequencerTester.SeqRunInStartInvokeFailureEmitsSeqDone (6 ms)
+[ RUN      ] WasmSequencerTester.SeqRunInStartTrapEmitsSeqDone
+
+***************************************
+(RQ)       WASM-SEQ-025
+***************************************
+[       OK ] WasmSequencerTester.SeqRunInStartTrapEmitsSeqDone (7 ms)
+[ RUN      ] WasmSequencerTester.SeqRunInMainInvokeFailureEmitsSeqDone
+
+***************************************
+(RQ)       WASM-SEQ-025
+***************************************
+[       OK ] WasmSequencerTester.SeqRunInMainInvokeFailureEmitsSeqDone (5 ms)
+[ RUN      ] WasmSequencerTester.RunCommandFailureBeforeStartEmitsNoSeqDone
+
+***************************************
+(RQ)       WASM-SEQ-025
+***************************************
+[       OK ] WasmSequencerTester.RunCommandFailureBeforeStartEmitsNoSeqDone (1 ms)
+[ RUN      ] WasmSequencerTester.RunReportsSkippedWhenPortsUnconnected
+
+***************************************
+(RQ)       WASM-SEQ-025
+***************************************
+[       OK ] WasmSequencerTester.RunReportsSkippedWhenPortsUnconnected (5 ms)
+[ RUN      ] WasmSequencerTester.PortRunAbortReportSkippedWhenSeqDoneOutUnconnected
+
+***************************************
+(RQ)       WASM-SEQ-025
+***************************************
+[       OK ] WasmSequencerTester.PortRunAbortReportSkippedWhenSeqDoneOutUnconnected (1 ms)
+[ RUN      ] WasmSequencerTester.SeqCancelInCancelsRunningSequence
+
+***************************************
+(RQ)       WASM-SEQ-010
+***************************************
+[       OK ] WasmSequencerTester.SeqCancelInCancelsRunningSequence (8 ms)
+[ RUN      ] WasmSequencerTester.PauseAtHostFunctionThenContinueResumes
+
+***************************************
+(RQ)       WASM-SEQ-009
+***************************************
+[       OK ] WasmSequencerTester.PauseAtHostFunctionThenContinueResumes (6 ms)
+[ RUN      ] WasmSequencerTester.CheckTimersWhileAwaitingWithoutTimer
+
+***************************************
+(RQ)       WASM-SEQ-013
+***************************************
+[       OK ] WasmSequencerTester.CheckTimersWhileAwaitingWithoutTimer (6 ms)
+[ RUN      ] WasmSequencerTester.HostFunctionTimeoutFailsAwaitingCommand
+
+***************************************
+(RQ)       WASM-SEQ-011
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.HostFunctionTimeoutFailsAwaitingCommand (6 ms)
+[ RUN      ] WasmSequencerTester.HostFunctionTimeoutTimeIncomparableFails
+
+***************************************
+(RQ)       WASM-SEQ-011
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.HostFunctionTimeoutTimeIncomparableFails (6 ms)
+[ RUN      ] WasmSequencerTester.HostFunctionTimeoutDisabledByZero
+
+***************************************
+(RQ)       WASM-SEQ-011
+***************************************
+[       OK ] WasmSequencerTester.HostFunctionTimeoutDisabledByZero (6 ms)
+[ RUN      ] WasmSequencerTester.HostFunctionTimeoutFailsBlockingSerialRecv
+
+***************************************
+(RQ)       WASM-SEQ-011
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-017
+***************************************
+[       OK ] WasmSequencerTester.HostFunctionTimeoutFailsBlockingSerialRecv (6 ms)
+[ RUN      ] WasmSequencerTester.LateCmdResponseFromOldSequenceIgnored
+
+***************************************
+(RQ)       WASM-SEQ-013
+***************************************
+[       OK ] WasmSequencerTester.LateCmdResponseFromOldSequenceIgnored (6 ms)
+[ RUN      ] WasmSequencerTester.WrongCmdResponseIndexFails
+
+***************************************
+(RQ)       WASM-SEQ-013
+***************************************
+[       OK ] WasmSequencerTester.WrongCmdResponseIndexFails (6 ms)
+[ RUN      ] WasmSequencerTester.SequenceIndexIncrementsAcrossRuns
+
+***************************************
+(RQ)       WASM-SEQ-013
+***************************************
+[       OK ] WasmSequencerTester.SequenceIndexIncrementsAcrossRuns (6 ms)
+[ RUN      ] WasmSequencerTester.LateCmdResponseFromPreviousRunIgnored
+
+***************************************
+(RQ)       WASM-SEQ-013
+***************************************
+[       OK ] WasmSequencerTester.LateCmdResponseFromPreviousRunIgnored (6 ms)
+[ RUN      ] WasmSequencerTester.RunWhileRunningRejected
+
+***************************************
+(RQ)       WASM-SEQ-024
+***************************************
+[       OK ] WasmSequencerTester.RunWhileRunningRejected (6 ms)
+[ RUN      ] WasmSequencerTester.LoadWhileRunningRejected
+
+***************************************
+(RQ)       WASM-SEQ-024
+***************************************
+[       OK ] WasmSequencerTester.LoadWhileRunningRejected (6 ms)
+[ RUN      ] WasmSequencerTester.InvokeWhileRunningRejected
+
+***************************************
+(RQ)       WASM-SEQ-024
+***************************************
+[       OK ] WasmSequencerTester.InvokeWhileRunningRejected (6 ms)
+[ RUN      ] WasmSequencerTester.WaitWhileRunningQueuesUntilFinish
+
+***************************************
+(RQ)       WASM-SEQ-007
+***************************************
+[       OK ] WasmSequencerTester.WaitWhileRunningQueuesUntilFinish (6 ms)
+[ RUN      ] WasmSequencerTester.UnexpectedCmdResponseWhileSpinningFails
+
+***************************************
+(RQ)       WASM-SEQ-013
+***************************************
+[       OK ] WasmSequencerTester.UnexpectedCmdResponseWhileSpinningFails (5 ms)
+[ RUN      ] WasmSequencerTester.UnexpectedCmdResponseWhileAwaitingSleepFails
+
+***************************************
+(RQ)       WASM-SEQ-013
+***************************************
+[       OK ] WasmSequencerTester.UnexpectedCmdResponseWhileAwaitingSleepFails (7 ms)
+[ RUN      ] WasmSequencerTester.LoadWhileReadyReloads
+
+***************************************
+(RQ)       WASM-SEQ-001
+***************************************
+[       OK ] WasmSequencerTester.LoadWhileReadyReloads (5 ms)
+[ RUN      ] WasmSequencerTester.LoadMemorylessModuleSucceeds
+
+***************************************
+(RQ)       WASM-SEQ-001
+***************************************
+[       OK ] WasmSequencerTester.LoadMemorylessModuleSucceeds (6 ms)
+[ RUN      ] WasmSequencerTester.LoadAfterMemorylessModuleSucceeds
+
+***************************************
+(RQ)       WASM-SEQ-001
+***************************************
+[       OK ] WasmSequencerTester.LoadAfterMemorylessModuleSucceeds (13 ms)
+[ RUN      ] WasmSequencerTester.PauseWhileAwaitingResponseIsPending
+
+***************************************
+(RQ)       WASM-SEQ-009
+***************************************
+[       OK ] WasmSequencerTester.PauseWhileAwaitingResponseIsPending (6 ms)
+[ RUN      ] WasmSequencerTester.PauseWhilePausedIsIdempotent
+
+***************************************
+(RQ)       WASM-SEQ-009
+***************************************
+[       OK ] WasmSequencerTester.PauseWhilePausedIsIdempotent (6 ms)
+[ RUN      ] WasmSequencerTester.WaitFinishQueueOverflow
+
+***************************************
+(RQ)       WASM-SEQ-007
+***************************************
+[       OK ] WasmSequencerTester.WaitFinishQueueOverflow (6 ms)
+[ RUN      ] WasmSequencerTester.WaitDrainedWithErrorWhenRunningSequenceCancelled
+
+***************************************
+(RQ)       WASM-SEQ-007
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-010
+***************************************
+[       OK ] WasmSequencerTester.WaitDrainedWithErrorWhenRunningSequenceCancelled (6 ms)
+[ RUN      ] WasmSequencerTester.WaitDrainedWithErrorWhenRunWithStartCancelled
+
+***************************************
+(RQ)       WASM-SEQ-007
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-010
+***************************************
+[       OK ] WasmSequencerTester.WaitDrainedWithErrorWhenRunWithStartCancelled (6 ms)
+[ RUN      ] WasmSequencerTester.WaitDrainedWithErrorWhenStartFails
+
+***************************************
+(RQ)       WASM-SEQ-007
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-018
+***************************************
+[       OK ] WasmSequencerTester.WaitDrainedWithErrorWhenStartFails (6 ms)
+[ RUN      ] WasmSequencerTester.ContinueWhileSpinningIsOk
+
+***************************************
+(RQ)       WASM-SEQ-009
+***************************************
+[       OK ] WasmSequencerTester.ContinueWhileSpinningIsOk (6 ms)
+[ RUN      ] WasmSequencerTester.SerialOutByteFidelityAndResume
+
+***************************************
+(RQ)       WASM-SEQ-016
+***************************************
+[       OK ] WasmSequencerTester.SerialOutByteFidelityAndResume (6 ms)
+[ RUN      ] WasmSequencerTester.SerialOutInvalidPortTraps
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.SerialOutInvalidPortTraps (6 ms)
+[ RUN      ] WasmSequencerTester.SerialOutPayloadTooLargeTraps
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.SerialOutPayloadTooLargeTraps (6 ms)
+[ RUN      ] WasmSequencerTester.SerialOutBadPointerFails
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.SerialOutBadPointerFails (6 ms)
+[ RUN      ] WasmSequencerTester.SerialOutDisconnectedPortTraps
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.SerialOutDisconnectedPortTraps (6 ms)
+[ RUN      ] WasmSequencerTester.SerialOutSendFailureFailsSequence
+
+***************************************
+(RQ)       WASM-SEQ-016
+***************************************
+[       OK ] WasmSequencerTester.SerialOutSendFailureFailsSequence (6 ms)
+[ RUN      ] WasmSequencerTester.SerialRecvBlockingDeliversMessageAtDataPtr
+
+***************************************
+(RQ)       WASM-SEQ-017
+***************************************
+[       OK ] WasmSequencerTester.SerialRecvBlockingDeliversMessageAtDataPtr (6 ms)
+[ RUN      ] WasmSequencerTester.SerialRecvBlocksThenWakesOnMessage
+
+***************************************
+(RQ)       WASM-SEQ-017
+***************************************
+[       OK ] WasmSequencerTester.SerialRecvBlocksThenWakesOnMessage (6 ms)
+[ RUN      ] WasmSequencerTester.SerialRecvMultiChunkMessage
+
+***************************************
+(RQ)       WASM-SEQ-017
+***************************************
+[       OK ] WasmSequencerTester.SerialRecvMultiChunkMessage (6 ms)
+[ RUN      ] WasmSequencerTester.SerialRecvExactChunkMultipleMessage
+
+***************************************
+(RQ)       WASM-SEQ-017
+***************************************
+[       OK ] WasmSequencerTester.SerialRecvExactChunkMultipleMessage (6 ms)
+[ RUN      ] WasmSequencerTester.SerialRecvNonBlockingEmptyReturnsEmptyStatus
+
+***************************************
+(RQ)       WASM-SEQ-017
+***************************************
+[       OK ] WasmSequencerTester.SerialRecvNonBlockingEmptyReturnsEmptyStatus (6 ms)
+[ RUN      ] WasmSequencerTester.SerialRecvInvalidPortTraps
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.SerialRecvInvalidPortTraps (6 ms)
+[ RUN      ] WasmSequencerTester.SerialRecvInvalidBlockingTypeTraps
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.SerialRecvInvalidBlockingTypeTraps (6 ms)
+[ RUN      ] WasmSequencerTester.SerialRecvMessageLargerThanGuestBufferFails
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.SerialRecvMessageLargerThanGuestBufferFails (6 ms)
+[ RUN      ] WasmSequencerTester.SerialRecvBadPointerFails
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.SerialRecvBadPointerFails (6 ms)
+[ RUN      ] WasmSequencerTester.SerialRecvBadDataPointerPartialChunkFails
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.SerialRecvBadDataPointerPartialChunkFails (6 ms)
+[ RUN      ] WasmSequencerTester.SerialRecvBadDataPointerFullChunkFails
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerTester.SerialRecvBadDataPointerFullChunkFails (6 ms)
+[ RUN      ] WasmSequencerTester.SerialInEnqueueFramesRawSizePrefixedMessages
+
+***************************************
+(RQ)       WASM-SEQ-017
+***************************************
+[       OK ] WasmSequencerTester.SerialInEnqueueFramesRawSizePrefixedMessages (1 ms)
+[ RUN      ] WasmSequencerTester.SerialInQueueFullDropsOldest
+
+***************************************
+(RQ)       WASM-SEQ-017
+***************************************
+[       OK ] WasmSequencerTester.SerialInQueueFullDropsOldest (1 ms)
+[ RUN      ] WasmSequencerTester.SerialInOversizedFrameDroppedNotAsserted
+
+***************************************
+(RQ)       WASM-SEQ-017
+***************************************
+[       OK ] WasmSequencerTester.SerialInOversizedFrameDroppedNotAsserted (1 ms)
+[ RUN      ] WasmSequencerTester.SerialInMaxSizeFrameEnqueued
+
+***************************************
+(RQ)       WASM-SEQ-017
+***************************************
+[       OK ] WasmSequencerTester.SerialInMaxSizeFrameEnqueued (1 ms)
+[ RUN      ] WasmSequencerTester.SerialInQueueFullDropsNewest
+
+***************************************
+(RQ)       WASM-SEQ-017
+***************************************
+[       OK ] WasmSequencerTester.SerialInQueueFullDropsNewest (1 ms)
+[ RUN      ] WasmSequencerTester.SerialInZeroSizeQueueDropsFramesWithoutCrashing
+
+***************************************
+(RQ)       WASM-SEQ-017
+***************************************
+[       OK ] WasmSequencerTester.SerialInZeroSizeQueueDropsFramesWithoutCrashing (1 ms)
+[ RUN      ] WasmSequencerTester.MemoryGrowSucceedsAndRegionUsable
+
+***************************************
+(RQ)       WASM-SEQ-022
+***************************************
+[       OK ] WasmSequencerTester.MemoryGrowSucceedsAndRegionUsable (5 ms)
+[ RUN      ] WasmSequencerTester.MemoryGrowBeyondPoolReturnsMinusOneGracefully
+
+***************************************
+(RQ)       WASM-SEQ-022
+***************************************
+[       OK ] WasmSequencerTester.MemoryGrowBeyondPoolReturnsMinusOneGracefully (6 ms)
+[ RUN      ] WasmSequencerTester.GuestReallocGrowsLastAllocationInPlace
+
+***************************************
+(RQ)       WASM-SEQ-022
+***************************************
+[       OK ] WasmSequencerTester.GuestReallocGrowsLastAllocationInPlace (1 ms)
+[ RUN      ] WasmSequencerTester.GuestReallocRejectsNonLastAllocation
+
+***************************************
+(RQ)       WASM-SEQ-022
+***************************************
+[       OK ] WasmSequencerTester.GuestReallocRejectsNonLastAllocation (1 ms)
+[ RUN      ] WasmSequencerTester.GuestReallocRejectsGrowBeyondPool
+
+***************************************
+(RQ)       WASM-SEQ-022
+***************************************
+[       OK ] WasmSequencerTester.GuestReallocRejectsGrowBeyondPool (1 ms)
+[ RUN      ] WasmSequencerTester.GuestReallocExactFitToPoolEndSucceeds
+
+***************************************
+(RQ)       WASM-SEQ-022
+***************************************
+[       OK ] WasmSequencerTester.GuestReallocExactFitToPoolEndSucceeds (1 ms)
+[ RUN      ] WasmSequencerTester.GuestReallocRejectsFourGiBGrowWithoutTruncation
+
+***************************************
+(RQ)       WASM-SEQ-022
+***************************************
+[       OK ] WasmSequencerTester.GuestReallocRejectsFourGiBGrowWithoutTruncation (1 ms)
+[ RUN      ] WasmSequencerTester.MemoryGrowFailsWhenNotLastAllocation
+
+***************************************
+(RQ)       WASM-SEQ-022
+***************************************
+[       OK ] WasmSequencerTester.MemoryGrowFailsWhenNotLastAllocation (12 ms)
+[ RUN      ] WasmSequencerTester.LifecycleMultipleLoadsWithFailures
+
+***************************************
+(RQ)       WASM-SEQ-003
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-021
+***************************************
+[       OK ] WasmSequencerTester.LifecycleMultipleLoadsWithFailures (40 ms)
+[ RUN      ] WasmSequencerTester.SpacewasmPanicBridgeAssertsFsw
+Rust panic engine.rs:42: internal invariant violated
+Assert: <fprime-checkout>/Svc/WasmSequencer/WasmSequencerHelpers.cpp:469
+[       OK ] WasmSequencerTester.SpacewasmPanicBridgeAssertsFsw (2 ms)
+[ RUN      ] WasmSequencerTester.GlobalGetReadsInitialI32
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalGetReadsInitialI32 (8 ms)
+[ RUN      ] WasmSequencerTester.GlobalGetReadsInitialI64
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalGetReadsInitialI64 (5 ms)
+[ RUN      ] WasmSequencerTester.GlobalGetReadsInitialF32
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalGetReadsInitialF32 (6 ms)
+[ RUN      ] WasmSequencerTester.GlobalGetReadsInitialF64
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalGetReadsInitialF64 (5 ms)
+[ RUN      ] WasmSequencerTester.GlobalGetReadsConstGlobal
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalGetReadsConstGlobal (6 ms)
+[ RUN      ] WasmSequencerTester.GlobalSetGetRoundTripI32
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalSetGetRoundTripI32 (6 ms)
+[ RUN      ] WasmSequencerTester.GlobalSetGetRoundTripI64
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalSetGetRoundTripI64 (6 ms)
+[ RUN      ] WasmSequencerTester.GlobalSetGetRoundTripF32
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalSetGetRoundTripF32 (6 ms)
+[ RUN      ] WasmSequencerTester.GlobalSetGetRoundTripF64
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalSetGetRoundTripF64 (6 ms)
+[ RUN      ] WasmSequencerTester.GlobalSetGetNamedModule
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalSetGetNamedModule (6 ms)
+[ RUN      ] WasmSequencerTester.GlobalSetTypeMismatchI64OnI32
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalSetTypeMismatchI64OnI32 (7 ms)
+[ RUN      ] WasmSequencerTester.GlobalSetTypeMismatchF32OnI32
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalSetTypeMismatchF32OnI32 (6 ms)
+[ RUN      ] WasmSequencerTester.GlobalSetConstIsNotMutable
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalSetConstIsNotMutable (10 ms)
+[ RUN      ] WasmSequencerTester.GlobalSetUnknownGlobalNotFound
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalSetUnknownGlobalNotFound (7 ms)
+[ RUN      ] WasmSequencerTester.GlobalGetUnknownGlobalNotFound
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalGetUnknownGlobalNotFound (5 ms)
+[ RUN      ] WasmSequencerTester.GlobalSetUnknownModuleNotFound
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalSetUnknownModuleNotFound (6 ms)
+[ RUN      ] WasmSequencerTester.GlobalGetUnknownModuleNotFound
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalGetUnknownModuleNotFound (6 ms)
+[ RUN      ] WasmSequencerTester.GlobalSetFromIdleModuleNotFound
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalSetFromIdleModuleNotFound (1 ms)
+[ RUN      ] WasmSequencerTester.GlobalGetFromIdleModuleNotFound
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalGetFromIdleModuleNotFound (1 ms)
+[ RUN      ] WasmSequencerTester.GlobalSetPersistsIntoInvoke
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalSetPersistsIntoInvoke (8 ms)
+[ RUN      ] WasmSequencerTester.GlobalSetOverwrittenAfterRunResetsStore
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalSetOverwrittenAfterRunResetsStore (6 ms)
+[ RUN      ] WasmSequencerTester.GlobalSetAllTypesIndependent
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalSetAllTypesIndependent (6 ms)
+[ RUN      ] WasmSequencerTester.GlobalSetF64TypeMismatchEmitsFailure
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalSetF64TypeMismatchEmitsFailure (7 ms)
+[ RUN      ] WasmSequencerTester.GlobalGetSetWhileSequencePaused
+
+***************************************
+(RQ)       WASM-SEQ-009
+***************************************
+
+***************************************
+(RQ)       WASM-SEQ-023
+***************************************
+[       OK ] WasmSequencerTester.GlobalGetSetWhileSequencePaused (6 ms)
+[----------] 210 tests from WasmSequencerTester (1332 ms total)
+
+[----------] 8 tests from WasmSequencerConfigTester
+[ RUN      ] WasmSequencerConfigTester.SerialInPerPortBehaviorsWiredByConfigure
+
+***************************************
+(RQ)       WASM-SEQ-017
+***************************************
+[       OK ] WasmSequencerConfigTester.SerialInPerPortBehaviorsWiredByConfigure (1 ms)
+[ RUN      ] WasmSequencerConfigTester.SerialOutUnconfiguredTrapsSend
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerConfigTester.SerialOutUnconfiguredTrapsSend (5 ms)
+[ RUN      ] WasmSequencerConfigTester.SerialOutBufferSizeFromConfig
+
+***************************************
+(RQ)       WASM-SEQ-019
+***************************************
+[       OK ] WasmSequencerConfigTester.SerialOutBufferSizeFromConfig (6 ms)
+[ RUN      ] WasmSequencerConfigTester.ConfigureTwiceAsserts
+[       OK ] WasmSequencerConfigTester.ConfigureTwiceAsserts (1098 ms)
+[ RUN      ] WasmSequencerConfigTester.ConfigureTooManyDynamicPagesAsserts
+
+***************************************
+(RQ)       WASM-SEQ-003
+***************************************
+[       OK ] WasmSequencerConfigTester.ConfigureTooManyDynamicPagesAsserts (1099 ms)
+[ RUN      ] WasmSequencerConfigTester.ConfigureStackTooLargeForPoolAsserts
+
+***************************************
+(RQ)       WASM-SEQ-003
+***************************************
+[       OK ] WasmSequencerConfigTester.ConfigureStackTooLargeForPoolAsserts (1092 ms)
+[ RUN      ] WasmSequencerConfigTester.PageFreeThenReAllocPoisonAsserts
+
+***************************************
+(RQ)       WASM-SEQ-003
+***************************************
+[       OK ] WasmSequencerConfigTester.PageFreeThenReAllocPoisonAsserts (1094 ms)
+[ RUN      ] WasmSequencerConfigTester.SerialInQueueFullBehaviorAssertAborts
+
+***************************************
+(RQ)       WASM-SEQ-017
+***************************************
+[       OK ] WasmSequencerConfigTester.SerialInQueueFullBehaviorAssertAborts (1103 ms)
+[----------] 8 tests from WasmSequencerConfigTester (5502 ms total)
+
+[----------] Global test environment tear-down
+[==========] 218 tests from 2 test suites ran. (6836 ms total)
+[  PASSED  ] 218 tests.
